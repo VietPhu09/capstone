@@ -6,7 +6,7 @@
 
 body {
   height: 100vh;
-  background-color: gray;
+  /* background-color: gray; */
   font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
@@ -125,28 +125,44 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  position: sticky;
+  top: 68px;
 }
 
-.menu .list__menu {
+.menu ul {
   list-style-type: none;
 }
 
-.menu .list__menu li {
+.menu li {
+  margin: 5px 0;
+}
+
+.menu a {
   width: 72px;
   height: 72px;
   color: #1a1a1a;
-  background-color: #e8e8e8;
-  border-radius: 16px;
+  font-size: 12px;
+  font-weight: bold;
+  text-decoration: none;
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: left;
+  border-radius: 20px;
+}
+
+.menu a:hover {
+  background-color: #e8ebed;
+  border: 2px solid gray;
+}
+
+.content {
+  height: 1200px;
 }
 
 /* footer */
 #footer {
   width: 100vw;
-  height: 250px;
+  height: 300px;
   background-color: #e8e8e8;
   display: flex;
   justify-content: flex-start;

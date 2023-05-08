@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/login_form.css" />
+    <title>Đăng nhập</title>
+  </head>
+  <body>
+    <div class="animated bounceInDown">
+      <div class="container">
+        <span class="error animated tada" id="msg"></span>
+        <form name="form1" class="box" onsubmit="return checkStuff()">
+          <h4>Đăng nhập<span></span></h4>
+          <input
+            type="text"
+            name="email"
+            placeholder="Email"
+            autocomplete="off"
+          />
+          <i class="typcn typcn-eye" id="eye"></i>
+          <input
+            type="password"
+            name="password"
+            placeholder="Passsword"
+            id="pwd"
+            autocomplete="off"
+          />
+          <label>
+            <input type="checkbox" />
+            <span></span>
+            <small class="rmb">Ghi nhớ</small>
+          </label>
+          <a href="#" class="forgetpass">Quên mật khẩu?</a>
+          <input type="submit" value="Sign in" class="btn1" />
+        </form>
+        <a href="#" class="dnthave">Không có tài khoảnt? Đăng ký</a>
+      </div>
+    </div>
+    <script src="../js/login_form.js"></script>
+  </body>
+</html>

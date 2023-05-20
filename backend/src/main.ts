@@ -12,7 +12,7 @@ async function bootstrap() {
   app.enableCors();
   app.setGlobalPrefix('/v1/api');
   app.useStaticAssets(join(__dirname, '..', 'uploads'), { prefix: '/image/' });
-  // ádsadasdsad
+  // 123
   app.use(
     session({
       secret: 'my-secret-key',

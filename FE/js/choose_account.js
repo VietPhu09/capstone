@@ -5,8 +5,8 @@ const tabs = $$(".tab-item");
 const panes = $$(".tab-pane");
 
 const tabActive = $(".tab-item.active");
-// const line = $(".tabs .line");
 
+// const line = $(".tabs .line");
 // requestIdleCallback(function () {
 //   line.style.left = tabActive.offsetLeft + "px";
 //   line.style.width = tabActive.offsetWidth + "px";

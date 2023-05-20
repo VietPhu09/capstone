@@ -16,7 +16,7 @@
         <h2>How do you want to use the website?</h2>
         <p>We’ll personalize your setup experience accordingly.</p>
         <ul class="tabs">
-          <li class="tab-item active">
+          <li id="user" class="tab-item active">
             <a href="#">
               <div class="tag_b">
                 <b>I'm user</b><br />
@@ -25,11 +25,11 @@
               <i>Free</i>
             </a>
           </li>
-          <li class="tab-item">
+          <li id="buss" class="tab-item">
             <a href="#">
               <div class="tag_b">
                 <b>I'm business</b><br />
-                <p>Tôi đến để tạo sự kiện và tìm kiếm tài năng</p>
+                <p>Tôi đến để tạo sự kiện</p>
               </div>
             </a>
           </li>
@@ -44,5 +44,19 @@
       </div>
     </div>
     <script src="../js/choose_account.js"></script>
+    <script>
+      const userBtn = document.querySelector("#user");
+      const bussBtn = document.querySelector("#buss");
+      userBtn.addEventListener("click", () => {
+        localStorage.setItem("role", "user");
+        location.href = "./register_form.html";
+      });
+
+      bussBtn.addEventListener("click", () => {
+        localStorage.setItem("role", "bussi");
+        location.href = "./register_form.html";
+      });
+      v;
+    </script>
   </body>
 </html>

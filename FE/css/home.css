@@ -296,3 +296,21 @@ body {
   background: #e4405f;
   color: #fff;
 }
+
+/* content */
+#article {
+  display: flex;
+  align-items: flex-start;
+}
+
+.contents {
+  padding-top: 30px;
+  margin-left: 30px;
+}
+
+.contents p {
+  margin-bottom: 20px;
+  padding: 0 10px;
+  font-size: 20px;
+  font-weight: bold;
+}

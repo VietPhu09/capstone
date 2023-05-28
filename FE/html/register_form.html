@@ -74,28 +74,28 @@
 
         <script>
 
-            // varlidator({
-            //     form: '#form-1',
-            //     formGroupSelector: '.form-group',
-            //     errorSelector: '.form-message',
-            //     rules: [
-            //         varlidator.isRequired('#fullname'),
-            //         varlidator.isRequired('#email'),
-            //         varlidator.isEmail('#email'),
-            //         varlidator.minLength('#password', 6),
-            //         varlidator.isRequired('#password_confirmation'),
-            //         // // varlidator.isRequired('#province'),
-            //         varlidator.isConfirmed('#password_confirmation', function(){
-            //             return document.querySelector('#form-1 #password').value
+            varlidator({
+                form: '#form-1',
+                formGroupSelector: '.form-group',
+                errorSelector: '.form-message',
+                rules: [
+                    varlidator.isRequired('#fullname'),
+                    varlidator.isRequired('#email'),
+                    varlidator.isEmail('#email'),
+                    varlidator.minLength('#password', 6),
+                    varlidator.isRequired('#password_confirmation'),
+                    // // varlidator.isRequired('#province'),
+                    varlidator.isConfirmed('#password_confirmation', function(){
+                        return document.querySelector('#form-1 #password').value
 
-            //         }, 'Mật khẩu nhập lại không khớp !'),
-            //         // varlidator.isRequired('input[name="gender"]'),
-            //         // varlidator.isRequired('input[name="gender1"]'),
-            //     ],
-            //     onSubmit: function(data) {
-            //         console.log(data)
-            //     }
-            // }) 
+                    }, 'Mật khẩu nhập lại không khớp !'),
+                    // varlidator.isRequired('input[name="gender"]'),
+                    // varlidator.isRequired('input[name="gender1"]'),
+                ],
+                onSubmit: function(data) {
+                    console.log(data)
+                }
+            }) 
                 alert(`Ban dang dung role ${localStorage.getItem("role")}`)
         </script>
         

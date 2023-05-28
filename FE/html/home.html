@@ -15,12 +15,12 @@
     <!-- begin header -->
     <header id="header">
       <div class="header">
-        <div class="logo">
+        <!-- <div class="logo">
           <div class="sublogo">
             <i class="bx bx-qr"></i>
           </div>
           <h3>We help your event</h3>
-        </div>
+        </div> -->
         <div class="search__nav">
           <div>
             <div class="search d-flex-center">
@@ -42,25 +42,85 @@
 
     <!-- begin content -->
     <article id="article">
-      <nav class="menu">
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Event</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#footer">Contact</a></li>
-        </ul>
-      </nav>
-      <div class="contents">
-        <p>Sự kiện nổi bật</p>
-        <div class="events">
-          <div class="event">
-            <div class="img">
-              <img src="../img/internship program.jpg" alt="Hinh Anh" />
+      <div id="body">
+        <div class="l-navbar" id="navbar">
+          <div class="nav">
+            <div>
+              <a href="#" class="nav_logo">
+                <img
+                  src="../img/qr-regular-36.png"
+                  alt=""
+                  class="nav_logo-icon"
+                />
+                <span class="nav_logo-text">WE HELP YOUR EVENT</span>
+              </a>
+              <div class="nav_toggle" id="nav-toggle">
+                <i class="bx bx-chevron-right"></i>
+              </div>
+              <ul class="nav_list">
+                <a href="#" class="nav_link active">
+                  <i class="bx bxs-home nav_icon"></i>
+                  <span class="nav_text">Dashboard</span>
+                </a>
+                <a href="#" class="nav_link">
+                  <i class="bx bxs-plus-circle nav_icon"></i>
+                  <span class="nav_text">Create Event</span>
+                </a>
+                <a href="#" class="nav_link">
+                  <i class="bx bxs-calendar-event nav_icon"></i>
+                  <span class="nav_text">Events</span>
+                </a>
+                <a href="#" class="nav_link">
+                  <i class="bx bxs-user nav_icon"></i>
+                  <span class="nav_text">My Details</span>
+                </a>
+              </ul>
             </div>
-            <div class="content">
-              <h2 class="title__event"></h2>
-            </div>
+            <a href="#" class="nav_link">
+              <i class="bx bx-log-out-circle nav_icon"></i>
+              <span class="nav_text">Close</span>
+            </a>
           </div>
+        </div>
+      </div>
+      <div class="contents">
+        <p>Sự kiện</p>
+        <!-- <div class="card-events">
+          <img
+            src="../img/internship program.jpg"
+            class="event-img"
+            alt="#"
+          />
+          <div class="event-body">
+            <h5 class="event-title">event title</h5>
+            <p class="event-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+            <a href="#" class="btn-event">Xem chi tiết</a>
+          </div>
+        </div> -->
+
+        <div class="post-container">
+          <img class="post-image" src="post1.jpg" alt="Bài viết 1" />
+          <h2 class="post-title">Tiêu đề bài viết 1</h2>
+          <p class="post-content">Nội dung bài viết 1...</p>
+          <div class="author-info">
+            <img class="author-img" src="author1.jpg" alt="Tác giả 1" />
+            <span class="author-name">Tác giả 1</span>
+          </div>
+          <p class="posted-time">Đã đăng cách đây 30 phút</p>
+        </div>
+
+        <div class="post-container">
+          <img class="post-image" src="post2.jpg" alt="Bài viết 2" />
+          <h2 class="post-title">Tiêu đề bài viết 2</h2>
+          <p class="post-content">Nội dung bài viết 2...</p>
+          <div class="author-info">
+            <img class="author-img" src="author2.jpg" alt="Tác giả 2" />
+            <span class="author-name">Tác giả 2</span>
+          </div>
+          <p class="posted-time">Đã đăng cách đây 45 phút</p>
         </div>
       </div>
     </article>
@@ -96,5 +156,6 @@
         </ul>
       </div>
     </footer>
+    <script src="../js/home.js"></script>
   </body>
 </html>
